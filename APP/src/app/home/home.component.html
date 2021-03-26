@@ -1,0 +1,43 @@
+<div class="container-fluid w-75">
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand text-white">JWT Auth System</a>
+        <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Log out</button>
+    </nav>
+
+    <header>
+        <div class="card bg-secondary mt-2 mb-2">
+            <div class="card-header">Ski Jupming</div>
+            <div class="card-body">
+                <h4 class="card-title">Kamil Stoch</h4>
+                <p class="card-text text-justify">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a
+                    galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but
+                    also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                    the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <button routerLink='/home/blogComment' routerLinkActive='btn-outline-success' type="button"
+            class="btn btn-outline-primary  w-50">Your comment</button>
+        <button routerLink='/home/blogComment-list' routerLinkActive='btn-outline-success' type="button"
+            class="btn btn-outline-primary w-50">Comments</button>
+    </nav>
+
+    <main>
+        <article>
+            <router-outlet></router-outlet>
+        </article>
+    </main>
+
+</div>
